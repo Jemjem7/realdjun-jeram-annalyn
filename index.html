@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <h1>Nike Manolo</h1>
+    </div>
+  </header>
+
+  <div class="login-container">
+    <div class="container">
+      <div class="login-form" id="loginForm">
+        <h2>Login</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar" style="display:none;">
+    <div class="container">
+      <ul id="navItems">
+        <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+        <li><a href="#" onclick="navigateTo('men')">Men</a></li>
+        <li><a href="#" onclick="navigateTo('women')">Women</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  
+  <div id="home" class="products" style="display:none;">
+    <div class="container">
+      <center>
+        <img src="1.jpg" alt="">
+        </center>
+      <div class="product">
+        <img src="home_product1.jpg" alt="Product 1">
+        <p>Description of Product 1</p>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </div>
+
+  <div id="men" class="products" style="display:none;">
+    <div class="container">
+      <div class="product">
+        <img src="men_product1.jpg" alt="Men Product 1">
+        <p>Description of Men Product 1</p>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </div>
+
+  <div id="women" class="products" style="display:none;">
+    <div class="container">
+      <div class="product">
+        <img src="women_product1.jpg" alt="Women Product 1">
+        <p>Description of Women Product 1</p>
+      </div>
+      <!-- Add more products as needed -->
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Nike Online Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
