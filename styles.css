@@ -1,132 +1,159 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Set the default font family for the entire document */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+
+  
 }
+
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  max-width: 1200px; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add padding to the container */
+
 }
 
+/* Header Styles */
 header {
-  background-color: #f8f9fa;
-  padding: 20px 0;
-  text-align: center;
+  background-color: #f8f9fa; /* Set background color for header */
+  padding: 20px 0; /* Add padding to the header */
+  text-align: center; /* Align text in the center */
 }
 
 header h1 {
-  color: #333;
-  margin: 0;
+  color: #333; /* Set color for the header text */
+  margin: 0; /* Remove default margin */
 }
 
+/* Navbar Styles */
 .navbar {
-  overflow: hidden;
-  text-align: center;
+  overflow: hidden; /* Clear floats */
+  text-align: center; /* Align text in the center */
 }
 
 .navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none; /* Remove default list style */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 .navbar li {
-  display: inline-block;
-  padding: 10px;
-  border-radius: 5px; 
-  transition: background-color 0.7s ease; 
-  background-color:rgb(138, 94, 45) ;
+  display: inline-block; /* Display navbar items horizontally */
+  padding: 10px; /* Add padding to navbar items */
+  border-radius: 5px; /* Add border radius to navbar items */
+  transition: background-color 0.7s ease; /* Smooth transition for background color change */
+  background-color:rgb(138, 94, 45); /* Set background color for navbar items */
 }
 
 .navbar li:hover {
   background-color: rgba(0, 0, 0, 0.1); /* Change background color on hover */
-  background-color: #ffffff;
+  background-color: #ffffff; /* Change background color on hover */
 }
 
 .navbar a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
+  text-decoration: none; /* Remove underline from links */
+  color: #000000; /* Set color for navbar links */
+  font-weight: bold; /* Set font weight for navbar links */
+  height: 50%;
+  
 }
 
+/* Product Styles */
 .product {
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow wrapping of images to the next line */
+  justify-content: center; /* Center the images horizontally */
+  gap: 20px; /* Add some space between the images */
 }
 
 .product img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Set maximum width for product images */
+  height: auto; /* Maintain aspect ratio for product images */
+  width: 200px; /* Set a fixed width for the images */
+  transition: box-shadow 0.3s ease; /* Add transition effect for box-shadow */
 }
 
+.product img:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect on hover */
+}
+
+.prod1 {
+text-align: center;
+
+}
+
+
+
+/* Footer Styles */
+/* Footer Styles */
 footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  background-color: #333; /* Set background color for footer */
+  color: #fff; /* Set color for footer text */
+  text-align: center; /* Align text in the center */
+  padding: 20px 0; /* Add padding to footer */
+  position: fixed; /* Position footer fixed to the bottom of the viewport */
+  bottom: 0; /* Align footer to the bottom */
+  width: 100%; /* Set footer width to 100% */
 }
 
+
+/* Login Styles */
 .login-container {
-  text-align: center;
-  padding: 20px 0;
- 
+  text-align: center; /* Align text in the center */
+  padding: 400px 0; /* Add padding to login container */
+  padding-bottom: 0%;
 }
 
 .login-form {
-  display: inline-block;
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 5px;
-  background-color: #fff;
+  display: inline-block; /* Display login form as inline-block */
+  border: 1px solid #ccc; /* Add border to login form */
+  padding: 20px; /* Add padding to login form */
+  border-radius: 5px; /* Add border radius to login form */
+  background-color: #ffffff; /* Set background color for login form */
 }
 
 .login-form label,
 .login-form input {
-  display: block;
-  margin-bottom: 10px;
+  display: block; /* Display labels and inputs as block elements */
+  margin-bottom: 10px; /* Add bottom margin to labels and inputs */
 }
 
 .login-form input[type="text"],
 .login-form input[type="password"] {
- 
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-
+  padding: 10px; /* Add padding to input fields */
+  border: 1px solid #ccc; /* Add border to input fields */
+  border-radius: 5px; /* Add border radius to input fields */
 }
 
 .login-form button {
-  background-color: #04AA6D;
-  border: none;
-  width: 100%;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; 
-  transition-duration: 0.4s;
+  background-color: #04AA6D; /* Set background color for login button */
+  border: none; /* Remove border from login button */
+  width: 100%; /* Set width of login button to 100% */
+  color: white; /* Set text color for login button */
+  padding: 15px 32px; /* Add padding to login button */
+  text-align: center; /* Align text in the center */
+  text-decoration: none; /* Remove underline from login button */
+  display: inline-block; /* Display login button as inline-block */
+  font-size: 16px; /* Set font size for login button */
+  margin: 4px 2px; /* Add margin to login button */
+  cursor: pointer; /* Set cursor style to pointer for login button */
+  transition-duration: 0.4s; /* Set transition duration for smooth animation */
 }
 
 .login-form button:hover {
-  background-color: #04AA6D; 
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
+  background-color: #04AA6D; /* Change background color on hover */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); /* Add box shadow on hover */
+}
 
-
+/* Media Queries */
 @media screen and (max-width: 768px) {
   .navbar li {
-    display: block;
-    padding: 5px 0;
+    display: block; /* Display navbar items as block elements */
+    padding: 5px 0; /* Add padding to navbar items */
   }
   .login-form {
-    width: 80%;
+    width: 80%; /* Set width of login form to 80% on smaller screens */
   }
 }
